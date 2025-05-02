@@ -51,8 +51,6 @@ def nahidOrg_processing_context(docs, max_tokens=1536):
             break
     return "\n".join(f"- {doc}" for doc in processed_docs)
 
-# GOOGLE_API_KEY = "AIzaSyAftKmzqsRmsF_Uk20ptSZQ0pDCV2LcxRM"
-
 GOOGLE_API_KEY = os.environ['GEMINI_API_KEY']
 genai.configure(api_key=GOOGLE_API_KEY)
 
