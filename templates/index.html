@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/ubot.css') }}">
+</head>
+<body>
+
+  <!-- Left-side Navigation Bar -->
+  <nav class="navbar">
+    <ul>
+      <li><a href="#">Dashboard</a></li>
+      <li><a href="#">Conversation</a></li>
+      <li><a href="#">Contribute</a></li>
+      <li><a href="#">Grade Calc.</a></li>
+      <li><a href="#">Settings</a></li>
+      <li><a href="#">Log out</a></li>
+    </ul>
+  </nav>
+
+  <!-- Main Content -->
+  <div class="input-container">
+    <input id="inputField" type="text" placeholder="Write something">
+    <button onclick="sendString()">Send String</button>
+  </div>
+
+  <!-- Output -->
+  <label id="outputField">Click the send button to send a *String* to the python code</label>
+
+  <script>
+
+      function sendString() {
+        inputField = document.getElementById("inputField").value;
+
+        // Parsing in JSON
+        const dataToSend = { inputKey: inputField }
+
+        fetch("/string_operation",{
+          method: "POST",
+          headers: { "Content-Type": "application/json" },
+          body: JSON.stringify(dataToSend) 
+        })
+        .then (response => response.json())
+        .then (data => {
+          document.getElementById("outputField").innerText = data.response;
+        })
+      }
+
+  </script>
+
+</body>
+</html>

@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grading Calculator</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/grade.css') }}">
+</head>
+<body>
+    
+    <aside class="sidebar">
+        <h2 class="brand">uBot</h2>
+        <nav class="sidebar-nav">
+            <ul>
+                <li><a href="#">Dashboard</a></li>
+                <li><a href="#">Conversation</a></li>
+                <li><a href="#">Contribute</a></li>
+                <li class="active"><a href="#">Grade Calc.</a></li>
+                <li><a href="#">Settings</a></li>
+                <li><a href="#">Log out</a></li>
+            </ul>
+        </nav>
+    </aside>
+
+    
+    <main class="content">
+        <header class="top-bar">
+            <div class="sort">
+                <label for="sort">Sort:</label>
+                <select id="sort">
+                    <option value="last-week">Last Week</option>
+                </select>
+            </div>
+            <div class="user-profile">
+                <img src="unnamed.jpg" alt="Profile Picture" class="profile-pic">
+                <div class="user-info">
+                    <h4>Ahnaf Tahmid Fahid</h4>
+                    <p>afahid222315@bscse.uiu.ac.bd</p>
+                </div>
+            </div>
+        </header>
+
+        <div class="main-container">
+            
+            <section class="grade-calculator">
+                <h1>Grading Calculator</h1>
+                <div class="calculator">
+                    <div class="calculator-tabs">
+                        <button class="active">Calculate</button>
+                        <button>Grading Policy</button>
+                    </div>
+
+                    <div class="calculator-content">
+                        <div class="form-group">
+                            <label>Completed Credits</label>
+                            <input type="text" placeholder="Completed Credits">
+                        </div>
+                        <div class="form-group">
+                            <label>Current CGPA</label>
+                            <input type="text" placeholder="Current CGPA">
+                        </div>
+
+                        
+                        <div class="course-form">
+                            <div class="course-row">
+                                <div class="form-group">
+                                    <label>Course</label>
+                                    <select>
+                                        <option value="course-1">1</option>
+                                    </select>
+                                </div>
+                                <div class="form-group">
+                                    <label>Credit</label>
+                                    <select>
+                                        <option value="3">3</option>
+                                    </select>
+                                </div>
+                                <div class="form-group">
+                                    <label>Grade</label>
+                                    <select>
+                                        <option value="A">A</option>
+                                    </select>
+                                </div>
+                            </div>
+                            
+                            <div class="course-row">
+                                <div class="form-group">
+                                    <label>Course</label>
+                                    <select>
+                                        <option value="course-1">1</option>
+                                    </select>
+                                </div>
+                                <div class="form-group">
+                                    <label>Credit</label>
+                                    <select>
+                                        <option value="1">1</option>
+                                    </select>
+                                </div>
+                                <div class="form-group">
+                                    <label>Grade</label>
+                                    <select>
+                                        <option value="A">A</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="buttons">
+                            <button class="reset">RESET</button>
+                            <button class="add-more">ADD MORE</button>
+                            <button class="add-retake">ADD RETAKE</button>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            
+            <section class="result-history">
+                <h2>Result History</h2>
+                <ul class="history-list">
+                    <li>Introduction to Computer Programming <span class="grade">A</span></li>
+                    <li>Discrete Mathematics <span class="grade">A</span></li>
+                    <li>System Analysis and Design <span class="grade">A</span></li>
+                    <li>System Analysis and Design Laboratory <span class="grade">A</span></li>
+                    <li>Computer Network <span class="grade">A-</span></li>
+                    <li>Computer Network Laboratory <span class="grade">B+</span></li>
+                    <li>Computer Architecture <span class="grade">A</span></li>
+                    <li>Theory of Computation <span class="grade">A</span></li>
+                    <li>Industrial and Production Engineering <span class="grade">A</span></li>
+                    <li>Financial and Managerial Accounting <span class="grade">A</span></li>
+                    <li>Database Management Systems <span class="grade">A</span></li>
+                    <li>Database Management Systems Laboratory <span class="grade">A</span></li>
+                </ul>
+                <a href="#" class="view-more">View More</a>
+            </section>
+        </div>
+    </main>
+</body>
+</html>

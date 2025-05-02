@@ -1,0 +1,96 @@
+/* static/css/style.css */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+  margin: 0;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+/* Left-side Navigation Bar */
+.navbar {
+  width: 200px;
+  background-color: #333;
+  padding-top: 20px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+}
+
+.navbar ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.navbar li {
+  padding: 10px;
+}
+
+.navbar a {
+  color: white;
+  text-decoration: none;
+  display: block;
+  padding: 10px;
+}
+
+.navbar a:hover {
+  background-color: #575757;
+}
+
+/* Main Content Style */
+
+p {
+  font-size: 1.2em;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+input {
+  padding: 10px;
+  font-size: 1em;
+  width: 600px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  /* margin-left: 200px; */
+  margin-bottom: 10px;
+  margin-right: 10px;
+}
+
+button {
+  padding: 10px 20px;
+  font-size: 1em;
+  color: #fff;
+  background-color: #007bff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+#outputField {
+  margin-left: 200px;
+  margin-top: 20px;
+  font-size: 1.2em;
+  color: #000000;
+}
+
+/* Input and Button Container */
+.input-container {
+  position: absolute;
+  bottom: 20px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+

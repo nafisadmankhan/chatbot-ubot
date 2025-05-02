@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile Setting</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/profile.css') }}">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;600;700;800&display=swap">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400&display=swap">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap">
+</head>
+<body>
+    <div class="settings">
+        <div class="left-panel">
+          <div class="background-blue-rectangle"></div>
+          <div class="logo-wrapper">
+            <div class="logo">
+              <img class="icon" loading="lazy" alt="" src="./public/icon.svg">
+              <a class="text">uBot</a>
+            </div>
+          </div>
+          <div class="slide-menu">
+            <div class="dashboard-menu-item-parent">
+              <div class="dashboard-menu-item">
+                <div class="invisible-rectangle"></div>
+                <div class="active-menu-item">
+                  <div class="overview-menu-item">
+                    <img class="overview-icon" src="./public/overview.svg">
+                    <div class="dashboard-menu-item1">
+                    <div class="dashboard">Dashboard</div>
+                    </div>
+                  </div>
+                </div>
+                <div class="active-rectangle"></div>
+              </div>
+              <div class="dashboard-menu-item-content">
+                <div class="customers-menu-item">
+                  <div class="invisible-rectangle1"></div>
+                  <div class="menu-icons">
+                    <img
+                      class="mode-comment-icon"
+                      loading="lazy"
+                      alt=""
+                      src="./public/mode-comment.svg"
+                    />
+  
+                    <div class="sub-menu-item-labels">
+                      <div class="conversation">Conversation</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="dashboard-menu-item-content1">
+                <div class="activity-menu-item">
+                  <div class="invisible-rectangle2"></div>
+                  <div class="upward-trend-parent">
+                    <img
+                      class="upward-trend-icon"
+                      loading="lazy"
+                      alt=""
+                      src="./public/upward-trend.svg"
+                    />
+  
+                    <div class="contribute">Contribute</div>
+                  </div>
+                </div>
+              </div>
+              <div class="dashboard-menu-item-content2">
+                <button class="reports-menu-item">
+                  <div class="invisible-rectangle3"></div>
+                  <div class="reports-parent">
+                    <img class="reports-icon" alt="" src="./public/reports.svg" />
+  
+                    <div class="grade-calc">Grade Calc.</div>
+                  </div>
+                </button>
+              </div>
+              <button class="settings-menu-item">
+                <div class="invisible-rectangle4"></div>
+                <div class="settings-menu-item-content">
+                  <img class="settings-icon" alt="" src="./public/settings.svg" />
+  
+                  <div class="settings-wrapper">
+                    <div class="settings1">Settings</div>
+                  </div>
+                </div>
+              </button>
+            </div>
+            <div class="log-out-menu-item">
+              <div class="invisible-rectangle5"></div>
+              <div class="logout-item-content">
+                <img
+                  class="logout-icon"
+                  loading="lazy"
+                  alt=""
+                  src="./public/logout.svg"
+                />
+  
+                <div class="log-out-wrapper">
+                  <div class="log-out">Log out</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="description">Description</div>
+        <div class="error">Error</div>
+        <div class="description1">Description</div>
+        <div class="error1">Error</div>
+        <main class="header-content-parent">
+          <header class="header-content">
+            <div class="header-content-child"></div>
+            <div class="left-header">
+              <div class="sort-dropdown">
+                <div class="sort-wrapper">
+                  <a class="sort">Sort:</a>
+                </div>
+                <div class="dropdown-menu">
+                  <a class="last-week">Last Week</a>
+                  <div class="dropdown-menu-child"></div>
+                  <div class="downarrow-wrapper">
+                    <img
+                      class="downarrow-icon"
+                      alt=""
+                      src="./public/downarrow.svg"
+                    />
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="right-header">
+              <div class="notifications-and-profile">
+                <div class="notification-icon">
+                  <img
+                    class="notification-icon1"
+                    loading="lazy"
+                    alt=""
+                    src="./public/notification.svg"
+                  />
+  
+                  <div class="notification-badge"></div>
+                </div>
+              </div>
+              <img
+                class="right-header-child"
+                loading="lazy"
+                alt=""
+                src="./public/group-3.svg"
+              />
+  
+              <div class="profile-info">
+                <div class="name-and-email">
+                  <a class="john-smith">John Smith</a>
+                  <div class="john-smithgmailcom">John Smith@gmail.com</div>
+                </div>
+              </div>
+            </div>
+          </header>
+          <section class="content">
+            <div class="main-content">
+              <div class="welcome-message">
+                <h1 class="profile-settings">Profile Settings</h1>
+                <div class="welcome-back-john">Welcome Back, John!</div>
+              </div>
+              <div class="messages-card">
+                <div class="messages-card-child"></div>
+                <div class="card-content">
+                  <div class="card-header">
+                    <div class="card-header-content">
+                      <div class="user-avatar">
+                        <img
+                          class="avatar-circle-icon"
+                          loading="lazy"
+                          alt=""
+                          src="./public/ellipse-1@2x.png"
+                        />
+                      </div>
+                      <div class="card-buttons">
+                        <div class="button-group">
+                          <div class="button">
+                            <img
+                              class="star-icon"
+                              alt=""
+                              src="./public/star.svg"
+                            />
+  
+                            <div class="button1">Delete</div>
+                            <img class="x-icon" alt="" src="./public/x.svg" />
+                          </div>
+                          <button class="button2">
+                            <img
+                              class="star-icon1"
+                              alt=""
+                              src="./public/star1.svg"
+                            />
+  
+                            <div class="button3">Change</div>
+                            <img class="x-icon1" alt="" src="./public/x1.svg" />
+                          </button>
+                        </div>
+                      </div>
+                      <div class="building-blockssegmented-butt">
+                        <div class="container">
+                          <div class="state-layer">
+                            <img
+                              class="selected-icon"
+                              alt=""
+                              src="./public/selected-icon.svg"
+                            />
+  
+                            <div class="segment-label">
+                              Verified Student Account
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="card-form-parent">
+                    <div class="card-form">
+                      <div class="email-field">
+                        <div class="input-fields">
+                          <div class="input-field">
+                            <div class="label">First Name</div>
+                            <div class="description2">Description</div>
+                            <div class="input">
+                              <div class="value">John</div>
+                            </div>
+                            <div class="error2">Error</div>
+                          </div>
+                          <div class="input-field1">
+                            <div class="label1">Last Name</div>
+                            <div class="description3">Description</div>
+                            <div class="input1">
+                              <div class="value1">Smith</div>
+                            </div>
+                            <div class="error3">Error</div>
+                          </div>
+                        </div>
+                        <div class="email-address">Email Address</div>
+                      </div>
+                      <div class="input2">
+                        <input
+                          class="nkhan212115bscseuiuacbd"
+                          placeholder="nkhan212115@bscse.uiu.ac.bd"
+                          type="text"
+                        />
+                      </div>
+                    </div>
+                    <div class="input-field2">
+                      <div class="label2">Department</div>
+                      <div class="description4">Description</div>
+                      <div class="input3">
+                        <input
+                          class="value2"
+                          placeholder="Computer Science and Engineering"
+                          type="text"
+                        />
+                      </div>
+                      <div class="error4">Error</div>
+                    </div>
+                    <div class="about-field">
+                      <div class="about-input">
+                        <div class="about">About</div>
+                        <div class="input4">
+                          <div class="lorem-ipsum-dolor">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing
+                            elit, sed do eiusmod tempor incididunt ut labore et
+                            dolore magna aliqua. Ut enim ad minim veniam, quis
+                            nostrud exercitation ullamco laboris nisi ut aliquip
+                            ex ea commodo consequat. Duis aute irure dolor in
+                            reprehenderit in voluptate velit esse cillum dolore eu
+                            fugiat nulla pariatur. Excepteur sint occaecat
+                            cupidatat non proident, sunt in culpa qui officia
+                            deserunt mollit anim id est laborum.
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="card-footer">
+                  <div class="button-group1">
+                    <div class="button4">
+                      <img class="star-icon2" alt="" src="./public/star2.svg" />
+  
+                      <div class="button5">Delete Profile</div>
+                      <img class="x-icon2" alt="" src="./public/x2.svg" />
+                    </div>
+                    <button class="button6">
+                      <img class="star-icon3" alt="" src="./public/star3.svg" />
+  
+                      <div class="button7">Save Changes</div>
+                      <img class="x-icon3" alt="" src="./public/x3.svg" />
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+        </main>
+      </div>
+    </body>
+  </html>
+  
